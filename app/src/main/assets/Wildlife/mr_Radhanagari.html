@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/radhanagari_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/radhanagari_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/radhanagari_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+पश्चिम घाटाच्या सावलीत राधानगरी वन्यजीव अभयारण्य आहे, हे ६०० पेक्षा जास्त बायसन ( गवा ) आणि विविध प्रकारचे समृद्ध वनस्पती आणि जीवजंतूंचे घर आहे. दाजीपूर अभयारण्य म्हणून सुद्धा ओळखल्या जाणार्‍या या उद्यानाची स्थापना १९८५ मध्ये झाली आणि तिथल्या स्थानामुळे त्वरित प्रसिद्धी मिळाली. युनेस्कोने जागतिक वारसा म्हणून मान्यता प्राप्त आहे. ३५१ चौ.कि.मी.पर्यंत पसरलेल्या अभयारण्यात अनेक प्रकारचे वनस्पती आणि प्राणी आहेत. येथे आपण बायसन (गवा), वाघ, बिबट्या, आळशी अस्वल, शेकरू (खारिची एक प्रजाती), भेकर हरिण आणि पिसोरी हरण इत्यादी पाहू शकतो.
+</p>
+
+<p>
+याव्यतिरिक्त, हे सह्याद्री रांगेमध्ये आहे आणि बरेच सरपटणारे प्राणी, पक्षी आणि प्राणी यांचा निवासस्थान आहे. कृष्णा नदीच्या उपनद्या, भोगावती, तुळशी, दिर्बा अभयारण्यातून जातात ज्यामुळे प्राणी व पक्ष्यांना पाणी मिळते.
+</p>
+
+<p>
+उद्यानात दोन बंधारे आहेत; एक भोगावती नदीवर (राधानगरी धरण) आणि दुधगंगा नदीवर (कल्लामवाडी धरण) बांधले गेले. ही दोन धरणे गिधाडे, गरुड, जंगल पक्षी, लहान पक्षी, घुबड, कबुतर, नाइट जार या असंख्य पक्षी प्रजातीना आकर्षित करतात. राष्ट्रीय उद्यानाच्या सौंदर्य पाहण्यासाठी, सकाळी आणि संध्याकाळी भेट दिली पाहिजे.
+</p>
+
+<p> 
+<strong><span style="color: rgb(26, 178, 255);">स्थानः
+</span></strong>
+ महाराष्ट्राच्या कोल्हापूर जिल्ह्यात आहे.
+
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">भेट देण्याची उत्तम वेळः
+</span></strong>
+अभयारण्य जून ते ऑक्टोबर दरम्यान बंद आहे. अभयारण्याला भेट देण्याचा उत्तम काळ हिवाळ्यामध्ये (नोव्हेंबर ते मार्च).
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

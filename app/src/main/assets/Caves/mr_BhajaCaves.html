@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/bhaje_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/bhaje_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/bhaje_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+महाराष्ट्राच्या पुण्यातील लोणावळ्या जवळील भाजे लेणीमध्ये २२ गुहा रॉक-कटची (खडकात कोरलेली ) आहेत. या लेण्या भाजे गावापासून सुमारे ४०० फूट उंचीवर आहेत. हे अरबी समुद्रापासून डेक्कन पर्यंतच्या महत्त्वपूर्ण व्यापार मार्गावर आहे. या लेण्यांमध्ये स्तूप आहेत, जे त्यांचे महत्त्वपूर्ण वैशिष्ट्य आहे. लेण्यांमध्ये चैत्यग्रह आणि विहार यांचा समावेश आहे.
+</p>
+
+<p>
+चैत्यगृह आश्चर्यकारक आणि भव्य लाकडी वास्तुकलाचा अभिमान आहे. त्यात बुद्धाच्या काही स्तुत्य प्रतिमा देखील आहेत. या लेण्यांच्या विहारात स्तंभयुक्त व्हरांडा आहेत, ज्यास सर्व आरामात सुशोभित केलेले आहे.
+</p>
+
+<p>
+या लेण्या त्यांच्या विस्मयकारक लाकडी वास्तुकलासाठी लोकप्रिय आहेत. या लेण्यांवर आकर्षक कोरीव कामं आहेत. या लेण्यांचे आर्किटेक्चरल डिझाईन कार्ला लेण्यांप्रमाणेच आहे. या लेण्यांच्या शिल्पात विस्तृत हार, लाल पोशाख आणि दागदागिने आहेत.
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

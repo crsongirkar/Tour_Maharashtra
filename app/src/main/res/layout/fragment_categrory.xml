@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlinethree"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="-127dp">
+        <LinearLayout android:gravity="end"
+                android:id="@+id/linearCategeories"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearColumncategories"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnCategories"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_68pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="@dimen/_226pxh"
+                        android:paddingBottom="@dimen/_21pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_21pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_categories"
+                        android:textAllCaps="false"
+                        style="@style/btnGradientRounded" tools:text="@string/lbl_categories"/>
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangle478"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_29pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <FrameLayout
+                            android:id="@+id/frameStackwildlife"
+                            android:layout_height="@dimen/_163pxv" android:layout_width="@dimen/_174pxh">
+                            <FrameLayout
+                                android:id="@+id/frameStackrectangle478"
+                                android:layout_gravity="top|start"
+                                android:layout_height="@dimen/_142pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="@dimen/_174pxh" style="@style/groupStylebluegray_100cornerRadius">
+                                <ImageView
+                                    android:id="@+id/imageRectangle478"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_142pxh"
+                                    android:layout_width="@dimen/_174pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_rectangle478"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle478"/>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnWildlife"
+                                    style="@style/btnSolidRounded"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/_30pxh"
+                                    android:paddingTop="@dimen/_8pxv"
+                                    android:paddingEnd="@dimen/_30pxh"
+                                    android:paddingBottom="@dimen/_8pxv"
+                                    android:singleLine="true"
+                                    android:text="@string/lbl_wildlife"
+                                    android:textAllCaps="false"
+                                    tools:text="@string/lbl_wildlife" />
+                            </FrameLayout>
+
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frameStacklanguage"
+                            android:layout_height="@dimen/_161pxv"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginStart="@dimen/_41pxh" android:layout_width="@dimen/_174pxh">
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtLanguage"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_4pxv"
+                                android:layout_marginEnd="@dimen/_31pxh"
+                                android:layout_marginStart="@dimen/_31pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@string/lbl_adventure"
+                                style="@style/txtMontserratromanmedium20" tools:text="@string/lbl_adventure"/>
+                            <ImageView
+                                android:id="@+id/imageRectangle469"
+                                android:layout_gravity="top|center"
+                                android:layout_height="@dimen/_142pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_rectangle469"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle469"/>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btnAdventure"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_8pxv"
+                                android:paddingEnd="@dimen/_26pxh"
+                                android:paddingStart="@dimen/_21pxh"
+                                android:paddingTop="@dimen/_8pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_adventure"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_adventure"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangle470"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_23pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <FrameLayout
+                            android:id="@+id/frameStackrectangle470"
+                            android:layout_height="@dimen/_159pxv"
+                            android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_174pxh">
+                            <ImageView
+                                android:id="@+id/imageRectangle470"
+                                android:layout_gravity="top|start"
+                                android:layout_height="@dimen/_142pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_rectangle470"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle470"/>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/bthBeach"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_8pxv"
+                                android:paddingEnd="@dimen/_30pxh"
+                                android:paddingStart="@dimen/_30pxh"
+                                android:paddingTop="@dimen/_8pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_beach"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRounded" tools:text="@string/lbl_beach"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frameStackrectangle471"
+                            android:layout_height="@dimen/_160pxv"
+                            android:layout_marginStart="@dimen/_42pxh" android:layout_width="@dimen/_174pxh">
+                            <ImageView
+                                android:id="@+id/imageRectangle471"
+                                android:layout_gravity="top|start"
+                                android:layout_height="@dimen/_142pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_rectangle471"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle471"/>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btnCaves"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_8pxv"
+                                android:paddingEnd="@dimen/_30pxh"
+                                android:paddingStart="@dimen/_30pxh"
+                                android:paddingTop="@dimen/_8pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_caves"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_caves"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <!-- 3rd-->
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangle479"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_29pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <FrameLayout
+                            android:id="@+id/frameStackfort"
+                            android:layout_height="@dimen/_163pxv" android:layout_width="@dimen/_174pxh">
+                            <FrameLayout
+                                android:id="@+id/frameStackrectangle479"
+                                android:layout_gravity="top|start"
+                                android:layout_height="@dimen/_142pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="@dimen/_174pxh" style="@style/groupStylebluegray_100cornerRadius">
+
+                                <ImageView
+                                    android:id="@+id/imageRectangle479"
+                                    android:layout_width="@dimen/_174pxh"
+                                    android:layout_height="154dp"
+                                    android:layout_gravity="start"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_rectangle472"
+                                    tools:ignore="ContentDescription"
+                                    tools:src="@drawable/img_rectangle472" />
+                            </FrameLayout>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btnForts"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_8pxv"
+                                android:paddingEnd="@dimen/_30pxh"
+                                android:paddingStart="@dimen/_30pxh"
+                                android:paddingTop="@dimen/_8pxv"
+                                android:singleLine="true"
+                                android:text="Forts"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRounded" tools:text="Forts"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frameStackater"
+                            android:layout_height="@dimen/_161pxv"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginStart="@dimen/_41pxh" android:layout_width="@dimen/_174pxh">
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtWsterFall"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_4pxv"
+                                android:layout_marginEnd="@dimen/_31pxh"
+                                android:layout_marginStart="@dimen/_31pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@string/lbl_adventure"
+                                style="@style/txtMontserratromanmedium20" tools:text="@string/lbl_adventure"/>
+                            <ImageView
+                                android:id="@+id/imageRectangle460"
+                                android:layout_gravity="top|center"
+                                android:layout_height="@dimen/_142pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_rectangle473"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle473"/>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btnWaterFall"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_8pxv"
+                                android:paddingEnd="@dimen/_26pxh"
+                                android:paddingStart="@dimen/_21pxh"
+                                android:paddingTop="@dimen/_8pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_waterfalls"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRoundedOutline" tools:text="WaterFall"/>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangle490"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_29pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <FrameLayout
+                            android:id="@+id/frameStackHotWater"
+                            android:layout_height="@dimen/_163pxv" android:layout_width="@dimen/_174pxh">
+
+                            <FrameLayout
+                                android:id="@+id/frameStackrectangle490"
+                                style="@style/groupStylebluegray_100cornerRadius"
+                                android:layout_width="@dimen/_174pxh"
+                                android:layout_height="191dp"
+                                android:layout_gravity="top|start"
+                                android:layout_marginBottom="@dimen/_10pxv">
+
+                                <ImageView
+                                    android:id="@+id/imageRectangle474"
+                                    android:layout_width="170dp"
+                                    android:layout_height="163dp"
+                                    android:layout_gravity="start"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_rectangle474"
+                                    tools:ignore="ContentDescription"
+                                    tools:src="@drawable/img_rectangle474" />
+                            </FrameLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnHotWater"
+                                style="@style/btnSolidRounded"
+                                android:layout_width="158dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:paddingStart="@dimen/_30pxh"
+                                android:paddingTop="@dimen/_8pxv"
+                                android:paddingEnd="@dimen/_30pxh"
+                                android:paddingBottom="@dimen/_8pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_hot_water"
+                                android:textAllCaps="false"
+                                tools:text="Hot-Water" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnframetwentyfive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_22pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollHorizontalscrollframetwentyfive"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:layout_gravity="right"
+                        android:contentDescription="@string/Category"
+                        android:fillViewport="true"
+                        android:gravity="end"
+                        android:scrollbars="none">
+
+                        <View
+                            android:id="@+id/lineLineThreeOne"
+                            android:layout_width="@dimen/_418pxh"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_gravity="top|start"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:background="@color/gray_200" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                </LinearLayout>
+  </ScrollView>
+
+    </LinearLayout>
+        </layout>
+

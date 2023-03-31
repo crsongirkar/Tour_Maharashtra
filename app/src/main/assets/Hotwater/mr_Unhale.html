@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/unhale_kund.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+</div>
+
+<p>
+राजापूर गरम पाण्याचे झरे (हॉट वॉटर स्प्रिंग), ज्याला उन्हाळे गरम पाण्याचे झरे देखील म्हणतात, राजापूर शहरालगतच्या उन्हाळे गावात आहे. कोंडावी नदीच्या पूरपातावर हा गरम पाण्याचा झरा आहे.  हा भारताच्या पश्चिम किनाऱ्यावरील दक्षिणेकडील गरम पाण्याचा झरा आहे.
+</p>
+
+<p>
+४२ डिग्री सेल्सिअस तापमानाचे गरम पाणी आंघोळीसाठी उपलब्ध असते. या झऱ्यातील गरम पाणी सल्फरने समृद्ध आहे आणि ते त्वचेच्या आजार बरे करण्यासाठी प्रसिद्ध आहे. हे स्थान रत्नागिरीपासून ७२ कि.मी. अंतरावर आहे.
+</p>
+
+<p>
+इतर गरम पाण्याच्या कुंडाप्रमाणे, राजापूर येथे एक तलाव नाही. त्याऐवजी गरम पाण्याच्या पाण्याचे तपमान अंघोळीच्या सुविधेच्या आत नळातून वाहते. अनुक्रमे महिला आणि पुरुषांसाठी दोन स्वतंत्र स्नानगृहे आहेत.
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

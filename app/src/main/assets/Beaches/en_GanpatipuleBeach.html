@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/ganpatipule_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/ganpatipule_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/ganpatipule_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+Ganpatipule Beach is situated just a short distance from Ratnagiri city on the Konkan coast of Maharashtra. Ganpatipule Beach is a peaceful getaway and beaches, which attracts peace-seekers, beach lovers and tourists alike on this beach.
+</p>
+
+<p>
+It simply looks stunning with the Ganapati temple on the shores that offers a soothing atmosphere.Besides the clear water, Ganpatipule is rich in vegetation, which also has mangroves and coconut palms. With the breathtaking beauty, serenity of the Ganapatipule village, pleasant weather and Dwardates scriptures, this beach has become one of the famous destinations for travelers.
+</p>
+
+<p>
+Winter is the most pleasant season to enjoy on Ganpatipule Beach, and the temperature of the night decreases. A horde of tourists turn up to visit the seashore Ganesha Temple lodging a monumental Ganesha. There are some cloistered beaches located right from Jaigad to Ratnagiri, which are separated from each other by rocky cliffs. With lots of shacks, horse riding and camel rides, the beach has become a perfect holiday destination for visitors.
+</p>
+
+<p><strong><span style="color: rgb(26, 178, 255);">
+Things to Do on Ganpatipule Beach :
+</span></strong></p>
+
+<p><strong><span style="color: rgb(199,4,43);">
+1. Adventure Water Sports :
+</span></strong></p>
+
+<p>
+Tourists can enjoy adventure water sports such as adventure freaks, paragliding, swimming, motorboats, water scooters and pedal boat rides, camel rides, etc. on Ganapatipule Beach. These are some of the popular adventure water activities of the beach that everyone should enjoy here.
+</p>
+
+<p><strong><span style="color: rgb(199,4,43);">
+2. Sightseeing in Ganpatipule :
+</span></strong></p>
+
+<p>
+If you don't want to indulge in adventure activities, then you may simply sit and relax on the beach as you may enjoy a picturesque view of sunset or go for a long leisurely walk on the beach Or else, visitors can also visit to the local Velneshwar beach temple and Swayambhu Ganpati Temple.
+</p>
+
+
+<p><strong><span style="color: rgb(199,4,43);">
+3.Shopping and food in Ganpatipule :
+</span></strong></p>
+
+<p>
+Spend some quality time by doing shopping in the local market where you'll get all types of household and decorative items at reasonable cost. Apart from shopping, Ganapatipule also offers plenty of tasty and mouth watering cuisines like ambapoli, phanspoli, fish curries, Kokam kadi, etc.
+</p>
+
+<p>
+It's an idyllic place to relax and spend a wonderful weekend with your family or loved ones.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

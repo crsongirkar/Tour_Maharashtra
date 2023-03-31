@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/vajreshwari_kund.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+</div>
+
+<p>
+इथल्या शहराचे मूळ नाव वडवली असे होते, परंतु आता वज्रेश्वरी देवीचे नाव या शहरासाठी ठेवण्यात आले आहे. महाराष्ट्रातील ठाणे जिल्ह्यात तुंग नदीच्या तीरावर वज्रेश्वरी हे शहर आहे. वज्रेश्वरी ज्वालामुखीच्या विस्फोटातून तयार झालेल्या मंदाकिनी पर्वताच्या पायथ्याशी आहे आणि या प्रदेशातील अनेक उष्णतेचे कारण हेच आहे. येथे अनेक गरम झरे अस्तित्वात आहेत. मंदिराच्या ५ किलोमीटरच्या परिसरात सुमारे २१ गरम पाण्याचे झरे आहेत अशी माहिती आहे.
+</p>
+
+<p>
+तानसा नदी येथून वाहते, तिच्या गरम पाण्याने समृद्ध. अकोली, गणेशपुरी, निंबोली आणि सातवल्ली या जवळपासच्या गावात झरे आहेत. स्प्रिंग्समधील पाण्याचे तापमान ४३ अंश सेल्सियस ते ४९ अंश सेल्सियस. गरम पाण्याचे झरे येण्याचे मुख्य कारण म्हणजे या प्रदेशातील पूर्वीच्या ज्वालामुखीशी जवळीक असल्यामुळे त्यांची निर्मिती झाले. 
+</p>
+
+<p>
+या ठिकाणी पावसाळ्यात आणि हिवाळा खूप गर्दी असते आणि झरे सरासरी राखले जातात परंतु आपण यापूर्वी कधीही गरम पाण्याचा झरा ( स्प्रिंग्स ) पाहिले नसतील तर नक्कीच भेट द्या.
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

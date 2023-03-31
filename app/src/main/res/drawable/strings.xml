@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">chinmay_s_application14</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_gautala_zoo">Gautala zoo</string>
+    <string name="lbl_sagareshwar">Sagareshwar</string>
+    <string name="lbl_melghat">Melghat</string>
+    <string name="lbl_nagzira">Nagzira</string>
+    <string name="lbl_wildlife">wildlife</string>
+    <string name="lbl_bustard_park">Bustard park</string>
+    <string name="lbl_bhimashankar">Bhimashankar</string>
+    <string name="lbl_karnala">Karnala</string>
+    <string name="lbl_phansad">Phansad</string>
+    <string name="lbl_radhanagari">Radhanagari</string>
+    <string name="lbl_konya">Konya</string>
+
+
+    <string name="lbl_bhivpuri">Bhivpuri</string>
+    <string name="lbl_pandav_kada">pandav-kada</string>
+    <string name="lbl_tamhini">tamhini</string>
+    <string name="lbl_dabhosa">Dabhosa</string>
+    <string name="lbl_jumma_patti">jumma-patti</string>
+    <string name="lbl_shastrakund">shastrakund</string>
+    <string name="lbl_vangani">vangani </string>
+    <string name="lbl_waterfalls">WaterFalls</string>
+    <string name="lbl_thoseghar">Thoseghar</string>
+    <string name="lbl_bhaje">Bhaje</string>
+    <string name="lbl_chinaman">chinaman</string>
+    <string name="lbl_dhobi">Dhobi</string>
+    <string name="lbl_madap">madap</string>
+    <string name="lbl_reverse">reverse</string>
+    <string name="lbl_zenith">zenith</string>
+    <string name="lbl_umbrella">umbrella</string>
+    <string name="lbl_kune">Kune</string>
+    <string name="lbl_chinchoti">chinchoti</string>
+    <string name="lbl_randha">randha</string>
+    <string name="lbl_step_waterfall">step-waterfall</string>
+    <string name="lbl_kataldhar">Kataldhar</string>
+
+
+
+    <string name="msg_harishchandraga">harishchandragad</string>
+    <string name="lbl_korigad">Korigad</string>
+    <string name="lbl_parbal_gad">parbal gad</string>
+    <string name="lbl_malhar_gad">Malhar-gad</string>
+    <string name="lbl_asherigad">Asherigad</string>
+    <string name="lbl_tung_fort">Tung-fort</string>
+    <string name="lbl_raj_machi">Raj machi</string>
+    <string name="lbl_yashwant_gad">Yashwant- gad</string>
+    <string name="lbl_singh_gad">Singh-gad</string>
+    <string name="lbl_dhopap">Dhopap</string>
+    <string name="lbl_devgad">Devgad</string>
+    <string name="lbl_rajgad">RajGad</string>
+    <string name="lbl_ghangad">Ghangad</string>
+<!--    <string name="lbl_karnala">Karnala</string>-->
+    <string name="lbl_lohgad">Lohgad</string>
+    <string name="lbl_tikona">Tikona</string>
+    <string name="lbl_forts">Forts</string>
+    <string name="lbl_ratangad">Ratangad</string>
+
+
+    <string name="lbl_adventure">Adventure</string>
+    <string name="lbl_rappelling">Rappelling</string>
+    <string name="lbl_riverrafting">RiverRafting</string>
+    <string name="lbl_scubadiving">ScubaDiving</string>
+    <string name="lbl_paragliding">Paragliding</string>
+    <string name="lbl_bunjee_jumping">Bunjee
+Jumping</string>
+    <string name="lbl_hot_balloon">Hot
+Balloon</string>
+
+
+</resources>

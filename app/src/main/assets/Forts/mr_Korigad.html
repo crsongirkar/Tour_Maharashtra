@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/korigad_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/korigad_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/korigad_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+कोरीगड हा महाराष्ट्रातील, पुणे जिल्ह्यातील लोणावळ्याच्या दक्षिणेला २० किमी अंतरावर एक डोंगराळ किल्ला आहे. कोरीगड किल्ला म्हणजे छत्रपती शिवाजी महाराजांच्या वारसाची भव्यता दर्शवणारा निसर्गरम्य ठिकाण आहे. हे समुद्रसपाटीपासून सुमारे ९२३ मीटर उंच आहे. शिखराच्या पायथ्याशी  तीन शोभिवंत मंदिरे बांधली गेलेली आहेत.
+</p>
+
+<p>
+पायथ्याशी असलेल्या पेठ शाहपूर  गावापासून ६०० पायर्‍या चढून किल्ल्यापर्यंत जाता येते.  या किल्ल्यावर तुम्ही छत्रपती शिवाजी महाराजांच्या जीवनशैलीबद्दल सखोल माहिती घेऊ शकता. कोरीगड, त्याला कोराईगड देखील म्हणतात.
+</p>
+
+<p>
+गडाच्या माथ्यावर एक विशाल पठार आहे. गडावर कोराई देवीचे मंदिर असून कोराई देवीची मूर्ती सुमारे ४ फूट आहे. गडाच्या दक्षिणेकडील बाजूस अनेक बुरुज आहेत. या किल्ल्यावर ६ तोफा आणि आणखी दोन मंदिरे आहेत. त्यापैकी लक्ष्मी नावाची सर्वात मोठी तोफ कोराई देवी मंदिराशेजारी आहे. गडाच्या माथ्यावरही दोन तलाव आहेत आणि त्यापुढील दोन गुहा आहेत. ट्रेक करणे सोपे आहे आणि गडाच्या माथ्यावर पोहोचण्यास एक तास लागतो.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

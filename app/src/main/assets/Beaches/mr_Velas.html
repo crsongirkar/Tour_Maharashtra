@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/velas_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/velas_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/velas_three.jpg" style="width:100%">
+    </div>
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+वेळास बीच हे महाराष्ट्रातील पर्यावरणीय पर्यटन स्थळांमधील प्रसिद्ध ठिकाण आहे, जे युनेस्कोच्या जागतिक वारसा पश्चिम घाटाच्या सुरूवातीस आहे. अनेक वर्षांपासून ऑलिव्ह रिडले जातीच्या कासवांच्या माद्या या किनाऱ्यावर अंडी घालण्यासाठी येतात. या अंड्यांचे व्यवस्थित संरक्षण केले जाते. गावकरी कासवांची पिल्लं वाळूमधून बाहेर यायच्या तारखांचा अगोदरच अंदाज घेऊन येथे कासव महोत्सव भरवतात. शेकडो कासवप्रेमी या महोत्सवाला दरवर्षी हजर असतात.
+</p>
+
+<p>
+सूर्य मावळताना पाण्याला साज चढतो आणि अंधार पडतो तेव्हा कासवांचा समुद्राकडे जाणारा प्रवास पाहणे एक मनोरंजक अनुभव आहे. प्रत्येक वर्षी फेब्रुवारी ते मे या कालावधीत गावात वार्षिक टर्टल फेस्टिव्हल आयोजित केला जातो तेव्हा कासवप्रेमी आणि लोक एकत्र येऊन त्या भागात कासवांच्या अस्तित्वाविषयी जागरूकता निर्माण करतात.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

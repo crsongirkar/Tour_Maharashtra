@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/koyna_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/koyna_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/koyna_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+कोयना वन्यजीव अभयारण्य जे महाराष्ट्रातील वन्यजीव अभयारण्यांपैकी एक आहे येथे आपण भेट दिलीच पाहिजे. महाराष्ट्रातील सातारा जिल्ह्यात घनदाट वनक्षेत्रात वसलेले आहे, कोयना हे एक सुंदर अभयारण्य आहे.  हे पर्यटक तसेच स्थानिकांकडून मोठ्या प्रमाणात भेट दिले जाते आणि आपण आसपासच्या प्रदेशात विविध प्रकारच्या वन्यजीव प्राणी आपल्याला आढळतील. 
+</p>
+
+<p>
+बर्‍याच सस्तन प्राण्यांचे घर, जसे की बंगाल टायगर्स (वाघ), भारतीय बिबट्या, हरीण, भारतीय गवा, अस्वल, भेकर हरिण आणि पिसोरी हरण; भारतीय रातवा, सुतार पक्षी सारख्या पक्ष्यांसह आणि सरपटणारे प्राणी, कोयना ही निखळ आनंद देणारी जागा आहे.
+</p>
+
+<p> 
+<strong><span style="color: rgb(26, 178, 255);">सफारी वेळः
+</span></strong>
+अभयारण्य सकाळी ९ ते संध्याकाळी ६ वाजेपर्यंत खुले असते.
+
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">भेट देण्याची उत्तम वेळः
+</span></strong>
+कोयना अभयारण्यला जाण्यासाठी उत्तम वेळ म्हणजे जून ते ऑक्टोबर.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

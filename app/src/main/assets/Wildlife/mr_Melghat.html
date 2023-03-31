@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/melghat_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/melghat_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/melghat_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+मेळघाट वन्यजीव अभयारण्य हे महाराष्ट्रातील आणखी एक प्रसिद्ध वन्यजीव अभयारण्य आहे जे अनेक वनस्पती आणि जीवजंतूंचे गौरवमय घर आहे. सातपुडा रांगेत आणि ताप्ती नदीभोवती वेढलेले वन्यजीव अभयारण्य व्याघ्र प्रकल्प म्हणून प्रसिद्ध आहे. मेळघाट हे व्याघ्र प्रकल्प म्हणून घोषित करण्यात आले आणि व्याघ्र प्रकल्प अंतर्गत १९७३-७४ मध्ये अधिसूचित केलेल्या पहिल्या नऊ व्याघ्र प्रकल्पांपैकी एक होता. मेळघाट नावाचा अर्थ म्हणजे ‘घाटांना भेटणे’ कारण मेळघाट वन्यजीव अभयारण्य भारताच्या पश्चिम घाटांना भेटते.
+</p>
+
+<p>
+मेळघाट अभयारण्य हे दुर्मिळ होत असलेल्या काही प्रजातींचे घर आहे; रानपिंगळा हे अशा प्रकारच्या प्रजातींचे उदाहरण आहे. नीलगाय, सांबार, बिबट्या, आळशी अस्वल आणि इतर प्राणी जंगलातही आढळतात.
+</p>
+
+<p> 
+
+<strong><span style="color: rgb(26, 178, 255);">भेट देण्याची उत्तम वेळः
+</span></strong>
+मेळघाट वन्यजीव अभयारण्याला भेट देण्याचा उत्तम काळ म्हणजे डिसेंबर ते जून.
+
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">स्थानः
+</span></strong>
+ महाराष्ट्रातील अमरावती जिल्ह्यात आहे.
+
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">सफारीची वेळः
+</span></strong>
+ सफारी सकाळी ८ ते संध्याकाळी ५ या वेळेत सुरु असते.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

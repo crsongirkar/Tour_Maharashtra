@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/hotballoon_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/hotballoon_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/hotballoon_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+    महाराष्ट्र, पर्यटकांसाठी भारतातील लोकप्रिय पर्यटन स्थळ. महाराष्ट्र हे नेत्रदीपक निसर्गरम्य सौंदर्यासह, किनारपट्टी आणि हिरव्यागार विस्ताराने परिपूर्ण आहे, हॉट एअर बलून सफारीचा आनंद घेण्यासाठी योग्य आहे. हवेमध्ये उड्डाण करणे आणि वार्‍याच्या दिशेने जाणे यापेक्षा जास्त साहसी काहीही असू शकत नाही. 
+</p>
+
+<p>
+    आपण नेहमीपेक्षा वेगळ काहीतरी शोधत असल्यास, लोणावळामध्ये गरम हवेच्या फुग्याचा अनुभव करा. पूर्णपणे नवीन आणि रीफ्रेश करण्यासारखे काहीतरी करण्याचा प्रयत्न करणार्‍यांमध्ये आता हॉट एअर बलूनिंग ही नवीन क्रेझ आहे. 
+</p>
+
+<p><strong><span style="color: rgb(199,4,43);">गरम हवेचा फुगा (हॉट एअर बलून) , लोणावळा :
+</span></strong></p>
+
+<p>
+लोणावळा हे महाराष्ट्रातील सर्वात सुंदर आणि नयनरम्य हिल स्टेशन आहे. लोणावळा मधील हॉट एअर बलून राईड मधून आपल्याला हिरव्यागार शेतात, ढगांनी झाकलेले तलाव, कोसळणारे धबधबे, किल्ल्याचे अवशेष आणि सह्याद्रीच्या खोर्‍यातील दर्‍या दिसतात. ही हॉट एअर बलून राइड हे शहरांच्या हालचालींमधून सुटकेसाठी योग्य आहे.
+</p>
+
+<p>
+आपल्या प्रियजनांसोबत सुंदर आठवणी बनवित ! हवेत ४००० फूट उंच उडताना तुम्हाला सह्याद्री खोर्‍याचे, डोंगरावर आणि लोणावळ्यातील लोकॅल्सच्या  ३६० डिग्री दृश्यांचा आनंद घेता येतो.
+</p>
+
+<p>
+लोणावळ्यातील हॉट एअर बलून सफारी प्रवासाचा आनंद घेण्यासाठी उत्तम वेळ एकतर सूर्योदय होण्यापूर्वी किंवा सूर्यास्ताच्या अगदी आधीचा आहे. सप्टेंबर महिन्यापासून मार्च अखेरपर्यंत रोमांचकारी साहसी उपक्रमांचा आनंद उपभोगण्याचा उत्तम काळ असतो . यावेळी, हवामान कोरडे राहते आणि  उष्ण नसते. लोणावळा मधील हॉट एअर बलूनिंग आपल्याला आयुष्यभराचा अनुभव देईल याची खात्री आहे.
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/rajgad_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/rajgad_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/rajgad_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+राजगड हा भारताच्या महाराष्ट्रातल्या पुणे जिल्ह्यात वसलेला डोंगर किल्ला आहे. पूर्वी मुरुदेव म्हणून ओळखले जाणारे आणि छत्रपती शिवाजी महाराजांच्या कारकिर्दीत सुमारे २६ वर्षे मराठा साम्राज्याची राजधानी म्हणून ओळखला जात असे. छत्रपती शिवाजी महाराजांनी राजगड किल्ल्यावर इतर किल्ल्यापेक्षा सर्वात जास्त दिवस मुक्काम केला होता. १६६५ मध्ये पुरंदर करारावर स्वाक्षरी करताना छत्रपती शिवाजी महाराजांनी ठेवलेल्या १७ किल्ल्यांपैकी हा एक किल्ला होता.
+</p>
+
+<p>
+हा किल्ला जवळच्या तोरणा किल्ल्यावरून सापडलेल्या खजिन्याचा उपयोग करुन बांधला गेला. समुद्रसपाटीपासून १३७६ मीटर उंचीवर असलेल्या या किल्ल्याच्या अवशेषांमध्ये पाण्याचे कुंड, गुहा आणि वाड्यांचा समावेश आहे. हा किल्ला एक लोकप्रिय पावसाळी ट्रेक गंतव्यस्थान आहे, तेथे काहीच तासात किल्ल्याचा शोध घेण्यास किल्ला खूप मोठा असल्याने रात्री मुक्काम करण्यास पर्यटक प्राधान्य देतात.
+</p>
+
+<p>
+राजगडवरील ट्रेक सह्याद्री आणि किल्ल्याच्या सौंदर्याची साक्ष देतात. किल्ल्याला ३ माचीचे तटबंदी आहे: पद्मावती माची, सुवेला माची आणि संजीवनी माची त्या काळातील वास्तुशैलीची सर्जनशीलता परिभाषित करतात. तेथे बरीच मंदिरे, पाण्याचे कुंड आणि आश्रमशाळा आहेत. येथून  तोरणा, लिंगना, रायगड, सिंहगड, पुरंदर, मंगलगड, वज्रगड, रोहिदा, रायरेश्वर, महाबळेश्वर पर्वतरांगा, मकरंदगड, प्रतापगड, वरंधा घाट, कवल्याचा गड, मोहनगड, घाट्या घाट, रायंद, लोहगड, विसापौर, तुंग आणि तिकोना यासारख्या इतर आसपासच्या किल्ल्यांचे भव्य दर्शन होते. 
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

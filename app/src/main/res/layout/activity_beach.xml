@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beach_activity">
+
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_gravity="start" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_width="match_parent"
+        tools:ignore="MissingConstraints">
+        <LinearLayout android:id="@+id/linearColumnbeach"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnBeach"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_68pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_226pxh"
+                android:paddingBottom="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_beach"
+                android:textAllCaps="false"
+                android:background="@drawable/rectangle_gradient_s_red_700_c_yellow_800_e5_e_white_a700_00_radius_34"/>
+            <LinearLayout android:id="@+id/linearRowbeachten"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_47pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackbeachten"
+                    android:layout_height="@dimen/_137pxv"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginTop="@dimen/_8pxv" android:layout_width="@dimen/_187pxh">
+                    <ImageView android:id="@+id/imageBeachTen"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach10"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnAlibagBeach"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_alibag_beach"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_alibag_beach"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackbeachfive"
+                    android:layout_height="@dimen/_154pxv"
+                    android:layout_marginStart="@dimen/_16pxh" android:layout_width="@dimen/_187pxh">
+
+                    <ImageView
+                        android:id="@+id/imageBeachFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_123pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_beach5"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:id="@+id/linearColumndahanubordi"
+                        style="@style/groupStylebluegray_100cornerRadius"
+                        android:layout_width="156dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnDahanu"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="209dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_dahanu_bordi"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_dahanu_bordi" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbeacheight"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackbeacheight"
+                    android:layout_height="@dimen/_137pxv"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_182pxh">
+                    <ImageView android:id="@+id/imageBeachEight"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach8"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnDiveagar"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_diveagar"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_diveagar"/>
+                    <FrameLayout
+
+                        android:id="@+id/frameStackrectangle498"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="@dimen/_44pxv"
+                        android:layout_marginEnd="@dimen/_4pxh"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_174pxh"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackbeachnine"
+                    android:layout_height="@dimen/_153pxv"
+                    android:layout_marginStart="@dimen/_18pxh" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachNine"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach9"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnGanpatipule"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_22pxh"
+                        android:paddingStart="@dimen/_26pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_ganpati_pule"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_ganpati_pule"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbeachthree"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackbeachthree"
+                    android:layout_height="@dimen/_158pxv"
+                    android:layout_marginTop="@dimen/_8pxv" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachThree"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach3"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_Harihareshwar"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="226dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_harihareshwar"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_harihareshwar" />
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackbeachfour"
+                    android:layout_height="@dimen/_166pxv"
+                    android:layout_marginStart="@dimen/_27pxh" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachFour"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach4"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnkihim"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_kihim_beach"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_kihim_beach"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbeachtwelve"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackbeachtwelve"
+                    android:layout_height="@dimen/_129pxv"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_190pxh">
+
+                    <ImageView
+                        android:id="@+id/imageBeachTwelve"
+                        android:layout_width="176dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="top|center"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_beach12"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnMurudharnai"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="199dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_21pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_17pxh"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_murud_harnai"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_murud_harnai" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle493"
+                    android:layout_height="@dimen/_137pxv"
+                    android:layout_marginStart="@dimen/_13pxh" android:layout_width="@dimen/_191pxh">
+                    <ImageView android:id="@+id/imageRectangle493"
+                        android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_127pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="@dimen/_185pxh"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_rectangle493"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnSasawanebeach"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_12pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_sasawanebeach"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_sasawanebeach"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbeachsix"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackbeachsix"
+                    android:layout_height="@dimen/_167pxv" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachSix"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach6"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnShrivardhan"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_22pxh"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_shrivardhan"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_shrivardhan"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackbeachseven"
+                    android:layout_height="@dimen/_167pxv"
+                    android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachSeven"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach7"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btn_Tarkarli"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_13pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_tarkarlibeach"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_tarkarlibeach"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbeachone"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackbeachone"
+                    android:layout_height="@dimen/_167pxv" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachOne"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach1"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnVelas"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_velas"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_velas"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackbeachtwo"
+                    android:layout_height="@dimen/_167pxv"
+                    android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_185pxh">
+                    <ImageView android:id="@+id/imageBeachTwo"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_beach2"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnVelneshwar"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingStart="@dimen/_18pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_velneshwar"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_velneshwar"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

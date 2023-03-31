@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/panhalekaji_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/panhalekaji_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/panhalekaji_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+पन्हाळेकाजी लेणी ही कोटजाई नदीच्या काठावर आहेत. या आश्चर्यकारक लेण्या तिसर्‍या शतकात बांधल्या गेल्या आहेत. हीनयान, बुद्ध, गणपत्य आणि नाथ पंथांच्या २९ लेण्यांचा गट आहे ह्या लेणी  कोटजाई आणि धक्ती नद्यांच्या संगमावर वसलेले आहेत, ज्यांनी अनेक शतकांपासून त्यांचा नैसर्गिक गौरव टिकविला आहे.
+</p>
+
+<p>
+१९७० साली या लेण्या पुन्हा शोधल्या गेल्या. पन्हाळेकाजी लेण्यांची रचना इतर बुद्ध लेण्यांप्रमाणेच आहे. लेण्यांमध्ये हिंदू देवता आणि देवीची विविध शिल्पे आहेत. गुहेत लाकडी तुळई, बौद्ध स्तूप, मानुषी बुद्धाची कोरीव मूर्ती, महा चंद्रनाची छाप, रामायण तसेच महाभारत, गणेशाचे शिल्प आणि बरेच काही आहे.
+</p>
+
+<p>
+मागील हजार वर्षांचा गौरवशाली इतिहास असलेली पन्हाळेकाजी लेणी अतिशय शांत आणि मोहक जागा आहेत जिथे पर्यटकांचा इतर ठिकाणांपेक्षा अनोखा अनुभव येतो.
+</p>
+
+<p> 
+<strong><span style="color: rgb(26, 178, 255);">स्थानः 
+</span></strong>
+दापोली, महाराष्ट्र
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">कसे पोहोचाल: 
+</span></strong>
+* प्रथम दापोली पोहचा आणि तेथून लोकल वाहतुकीने पन्हाळेकाजी लेण्यांपर्यंत पोहोचण्यासाठी ३१ किमीचा प्रवास करा. <br>
+* खेड हे सर्वात जवळचे रेल्वे स्टेशन ३३ कि.मी. अंतरावर आहे.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

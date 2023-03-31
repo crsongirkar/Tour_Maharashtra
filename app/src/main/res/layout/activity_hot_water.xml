@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hot_water_activity">
+    <ScrollView
+        android:id="@+id/scrollViewScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearColumnhotwater"
+            android:layout_width="match_parent"
+            android:paddingTop="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHotwater"
+                style="@style/btnGradientRounded"
+                android:layout_width="@dimen/_226pxh"
+                android:layout_height="@dimen/_68pxv"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_hot_water"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_hot_water" />
+
+            <LinearLayout
+                android:id="@+id/linearRowwaterseven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_51pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackwaterseven"
+                    android:layout_width="@dimen/_177pxh"
+                    android:layout_height="@dimen/_125pxv"
+                    android:layout_marginTop="@dimen/_3pxv">
+
+                    <ImageView
+                        android:id="@+id/imageWaterSeven"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_107pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_water7" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/etGroupFive"
+                        style="@style/etSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_tatwani"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_29pxh"
+                        android:paddingTop="@dimen/_15pxv"
+                        android:paddingEnd="@dimen/_23pxh"
+                        android:paddingBottom="@dimen/_5pxv"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black_900"
+                        tools:ignore="Autofill" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackwaterfour"
+                    android:layout_width="@dimen/_174pxh"
+                    android:layout_height="@dimen/_124pxv"
+                    android:layout_marginStart="@dimen/_33pxh"
+                    android:layout_marginBottom="@dimen/_4pxv">
+
+                    <ImageView
+                        android:id="@+id/imageWaterFour"
+                        android:layout_width="@dimen/_174pxh"
+                        android:layout_height="@dimen/_124pxh"
+                        android:layout_gravity="start"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_water4" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/txtGroupSix"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_20pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_unapdev"
+                        tools:text="@string/lbl_unapdev" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowwaterfive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackwaterfive"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_137pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_3pxv">
+
+                    <ImageView
+                        android:id="@+id/imageWaterFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_water5" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/etGroupThree"
+                        style="@style/etSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_unhale"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_3pxv"
+                        android:text="@string/lbl_unhale"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black_900"
+                        tools:ignore="Autofill" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackwatersix"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageWaterSix"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_water6" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/txtGroupFour"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:paddingBottom="@dimen/_2pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_unhavare"
+                        tools:text="@string/lbl_unhavare" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowwatertwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackwatertwo"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_149pxv"
+                    android:layout_marginTop="@dimen/_8pxv">
+
+                    <ImageView
+                        android:id="@+id/imageWaterTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_water2" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/txtGroupOne"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_7pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_unhere"
+                        tools:text="@string/lbl_unhere" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackwaterthree"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_148pxv"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginBottom="@dimen/_9pxv">
+
+                    <ImageView
+                        android:id="@+id/imageWaterThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_water3" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/etGroupTwo"
+                        style="@style/etSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                        android:ellipsize="end"
+                        android:text="@string/lbl_unkeshwar"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_17pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black_900"
+                        tools:ignore="Autofill" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameStackwaterone"
+                android:layout_width="@dimen/_185pxh"
+                android:layout_height="@dimen/_119pxv"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_marginEnd="@dimen/_13pxh">
+
+                <ImageView
+                    android:id="@+id/imageWaterOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_105pxv"
+                    android:layout_gravity="top|start"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    android:src="@drawable/img_water1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVajreshwari"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_5pxh"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_22pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_23pxh"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_vajresh_wari"
+                    android:textAllCaps="false"
+                    tools:text="@string/lbl_vajresh_wari" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

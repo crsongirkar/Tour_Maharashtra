@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/river_rafting_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/river_rafting_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/river_rafting_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+    Every river in the world has its own unique identity. More so, rivers are considered as the national treasure of any country. Even India is blessed with numerous rivers. Like many other rivers Kundalika is a small, perennial yet beautiful river in western Maharashtra.
+</p>
+
+<p>
+    If you want to do something excited, rafting on River Kundalika at Kolad will be an experience in itself. River Rafting is the popular and best adventure sports in Maharashtra.
+</p>
+
+<p>
+    Kundalika is a beautiful river originating in the Western Ghats of Maharashtra and the rafting experience is really awesome with in 13 km of stretch along with adventure activities like Kayaking, Canoeing and Boating.
+    <br><br>
+    The activity started with only three rafts in the beginning and such has been the increasing demand that there are now available more than 50 rafts.making this river a hot spot for such an adventure activity. Rafting on the Kundalika is considered Grade III level because of its limited technical rapids.
+</p>
+
+<p>
+    The amazing part about the Kundalika is that it is the only river in India where water rafting is possible throughout the year.
+<br><br>
+    Along with fun, thrill and excitement, we can enjoy the presence of such species as Common Kingfishers, Little Cormorant, Crested Serpent, Eagle and Great Hornbill, many of them hovering or moving around with us while rafting.
+</p>
+
+<p>
+    This place also known as Kolad River Rafting, Kolad is a village in Raigad district, Maharashtra State. It lies on the banks of River Kundalika.
+</p>
+
+<p><strong><span style="color: rgb(199,4,43);"> Best time to Visit Kolad for Kundalika Rafting :
+</span></strong></p>
+
+<p>
+The climate in Kolad is of a tropical type and being in the midst of the Sahyadri mountain range the weather is generally pleasant throughout the year so, one can visit Kolad any time of the year.
+</p>
+
+<p>
+<b>Monsoons (June to October): </b> <br>
+The entire Konkan belt is blessed with heavy rain during the monsoons and this is the best time to visit Kolad for white water river rafting as the water levels in the river are high and the currents get stronger which makes rafting even more exciting and enjoyable.
+<br><br>
+Monsoons are also an ideal time in Kolad to admire a wide variety of flora and fauna; hear the shrill of the birds chirping and see colorful butterflies.
+</p>
+
+<p>
+<b>Winters (November to February): </b> <br>
+These are also extremely good months to visit Kolad as the weather during this time is pleasantly cool and comfortable.
+<br><br>
+we can enjoy rafting, other adventure activities or spend time relaxing and visiting attractions in and around Kolad.
+<br><br>
+As night falls it gets a bit chilly this is the perfect time to enjoy a barbeque or light a campfire and have a great time with your buddies.
+</p>
+
+<p>
+<b>Summers (March to May):</b><br>
+
+During summer the climate is hotter during the day, but this still does not affect white water rafting activity because rafting takes place in the morning at around 8:00 a.m. and ends by 11:00 a.m. But this is an ideal time for tourists whos prefer lesser crowds and would like to relax, enjoy and experience Kolad.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>

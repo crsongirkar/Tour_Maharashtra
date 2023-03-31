@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".waterfall_activity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViewScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-42dp"
+        tools:layout_editor_absoluteY="48dp">
+
+        <LinearLayout
+            android:id="@+id/linearColumnwaterfalls"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWaterfalls"
+                android:background="@drawable/rectangle_gradient_s_black_901_c_red_700_e5_e_yellow_900_7c_radius_34"
+                android:layout_width="@dimen/_226pxh"
+                android:layout_height="@dimen/_68pxv"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_waterfalls"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_waterfalls" />
+
+            <LinearLayout
+                android:id="@+id/linearRowrectangle486"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle486"
+                    android:layout_width="@dimen/_177pxh"
+                    android:layout_height="@dimen/_125pxv"
+                    android:layout_marginTop="@dimen/_9pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle486"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_107pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle48"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bhaje"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_17pxv"
+                        android:paddingBottom="@dimen/_3pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_bhaje"
+                        tools:text="@string/lbl_bhaje" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle487"
+                    android:layout_width="@dimen/_174pxh"
+                    android:layout_height="@dimen/_130pxv"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginBottom="@dimen/_4pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle487"
+                        android:layout_width="161dp"
+                        android:layout_height="157dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle49"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bhivpuri"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="141dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_15pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_bhivpuri"
+                        tools:text="@string/lbl_bhivpuri" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowrectangle494"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle494"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle494"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle55"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/kune"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_kune"
+                        tools:text="@string/lbl_kune" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle495"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle495"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle56"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/madap"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_madap"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_madap" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowrectangle505"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle505"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_149pxv"
+                    android:layout_marginTop="@dimen/_8pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle505"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle57"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/etGroupEleven"
+                        style="@style/etSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_7pxh"
+                        android:background="@drawable/rectangle_bg_bluegray_100_radius_15"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_dabhosa"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_28pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black_900"
+                        tools:ignore="Autofill" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle491"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_148pxv"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginBottom="@dimen/_9pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle491"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_127pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle52"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnDhobi"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_dhobi"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_dhobi" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowrectangle492"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle492"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_121pxv"
+                    android:layout_marginBottom="@dimen/_5pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle492"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_105pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:src="@drawable/img_rectangle53"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnJummapatti"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_15pxh"
+                        android:paddingTop="@dimen/_8pxv"
+                        android:paddingEnd="@dimen/_20pxh"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_jumma_patti"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_jumma_patti" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle493"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_127pxv"
+                    android:layout_marginStart="@dimen/_15pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle493"
+                        android:layout_width="@dimen/_185pxh"
+                        android:layout_height="@dimen/_127pxh"
+                        android:layout_gravity="start"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle54"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnKataldhar"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_15pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_21pxh"
+                        android:paddingTop="@dimen/_9pxv"
+                        android:paddingEnd="@dimen/_26pxh"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_kataldhar"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_kataldhar" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearRowrectangle488"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle488"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle488"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle50"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/txtGroupFourteen"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_chinaman"
+                        tools:text="@string/lbl_chinaman" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle489"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle489"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle51"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnChinchoti"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_chinchoti"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_chinchoti" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowrectangle508"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle508"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle508"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle59"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/pandav_kada"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_pandav_kada"
+                        tools:text="@string/lbl_pandav_kada" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle507"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle507"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle58"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/randha"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_randha"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_randha" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearRowrectangle512"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle512"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle512"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle61"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/reverse"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_reverse"
+                        tools:text="@string/lbl_reverse" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle511"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle511"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle60"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/shastrakund"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_shastrakund"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_shastrakund" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearRowrectangle516"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle516"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle516"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle63"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/step"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="170dp"
+                        android:layout_height="59dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_step_waterfall"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck"
+                        tools:text="@string/lbl_step_waterfall" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle515"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle515"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle62"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tamhini"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="143dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_tamhini"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_tamhini" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearRowrectangle520"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle520"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle520"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle65"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/thoseghar"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_thoseghar"
+                        tools:text="@string/lbl_thoseghar" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle519"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle519"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle64"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/umbrella"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_umbrella"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_umbrella" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearRowrectangle524"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle524"
+                    android:layout_width="@dimen/_182pxh"
+                    android:layout_height="@dimen/_138pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginBottom="@dimen/_1pxv">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle524"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_115pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle67"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/vangani"
+                        style="@style/txtSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:paddingStart="@dimen/_22pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_vangani"
+                        tools:text="@string/lbl_vangani" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameStackrectangle523"
+                    android:layout_width="@dimen/_185pxh"
+                    android:layout_height="@dimen/_143pxv"
+                    android:layout_marginStart="@dimen/_18pxh">
+
+                    <ImageView
+                        android:id="@+id/imageRectangle523"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_126pxv"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle66"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/zenith"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_27pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_zenith"
+                        android:textAllCaps="false"
+                        tools:text="@string/lbl_zenith" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Tour_Maharashtra</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_beaches">Beaches</string>
+    <string name="lbl_travel_places">Travel Places</string>
+    <string name="lbl_hot_water">Hot-Water</string>
+    <string name="lbl_categories2">Categories</string>
+    <string name="lbl_jalgaon">Jalgaon</string>
+    <string name="msg_login_with_goog">Login with Google</string>
+    <string name="lbl_hotel_booking">Hotel Booking</string>
+    <string name="msg_search_for_plac">Search for places..</string>
+    <string name="lbl_waterfalls">Waterfalls</string>
+    <string name="lbl_mountain">Mountain</string>
+    <string name="msg_maharashtra_tra">Maharashtra Traveling</string>
+    <string name="lbl_ahmednagar">Ahmednagar</string>
+    <string name="lbl_caves">Caves</string>
+    <string name="lbl_nashik">Nashik</string>
+    <string name="lbl_mumbai">Mumbai</string>
+    <string name="lbl_chinmay">Chinmay </string>
+    <string name="lbl_categories">Categories </string>
+    <string name="lbl_wildlife">Wildlife</string>
+    <string name="lbl_weather">weather</string>
+    <string name="lbl_view_all">view all</string>
+    <string name="lbl_forts">Forts</string>
+    <string name="lbl_dhule">Dhule</string>
+    <string name="lbl_log_out">Log out</string>
+    <string name="lbl_adventure">Adventure </string>
+    <string name="lbl_all">All</string>
+    <string name="lbl_popular_places">Popular Places </string>
+    <string name="lbl_akola">Akola</string>
+    <string name="lbl_solapur">Solapur</string>
+    <string name="lbl_language">Language</string>
+    <string name="lbl_camping">Camping</string>
+    <string name="msg_crsongirkar2_gm">crsongirkar2@gmail.com</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="lbl_ratnagiri">Ratnagiri </string>
+    <string name="lbl_faq">FAQ</string>
+    <string name="lbl_beach">Beach</string>
+    <string name="lbl_pune">Pune</string>
+    <string name="lbl_hello_chinmay">Hello\u2028Chinmay</string>
+    <string name="lbl_aurangabad">Aurangabad</string>
+    <string name="lbl_Forts" />
+
+
+    <string name="lbl_gautala_zoo">Gautala zoo</string>
+    <string name="lbl_sagareshwar">Sagareshwar</string>
+    <string name="lbl_melghat">Melghat</string>
+    <string name="lbl_nagzira">Nagzira</string>
+
+    <string name="lbl_bustard_park">Bustard park</string>
+    <string name="lbl_bhimashankar">Bhimashankar</string>
+    <string name="lbl_karnala">Karnala</string>
+    <string name="lbl_phansad">Phansad</string>
+    <string name="lbl_radhanagari">Radhanagari</string>
+    <string name="lbl_konya">Konya</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="lbl_category" />
+    <string name="place">place</string>
+    <string name="category">category</string>
+    <string name="Category">Category</string>
+    <string name="Place">Place</string>
+    <string name="Profile">Profile</string>
+
+
+    <!--waterfall-->
+
+    <string name="lbl_bhivpuri">Bhivpuri</string>
+    <string name="lbl_pandav_kada">pandav-kada</string>
+    <string name="lbl_tamhini">tamhini</string>
+    <string name="lbl_dabhosa">Dabhosa</string>
+    <string name="lbl_jumma_patti">jumma-patti</string>
+    <string name="lbl_shastrakund">shastrakund</string>
+    <string name="lbl_vangani">vangani </string>
+    <!--    <string name="lbl_waterfalls">WaterFalls</string>-->
+    <string name="lbl_thoseghar">Thoseghar</string>
+    <string name="lbl_bhaje">Bhaje</string>
+    <string name="lbl_chinaman">chinaman</string>
+    <string name="lbl_dhobi">Dhobi</string>
+    <string name="lbl_madap">madap</string>
+    <string name="lbl_reverse">reverse</string>
+    <string name="lbl_zenith">zenith</string>
+    <string name="lbl_umbrella">umbrella</string>
+    <string name="lbl_kune">Kune</string>
+    <string name="lbl_chinchoti">chinchoti</string>
+    <string name="lbl_randha">randha</string>
+    <string name="lbl_step_waterfall">step-waterfall</string>
+    <string name="lbl_kataldhar">Kataldhar</string>
+
+
+    <!--forts-->
+
+    <string name="msg_harishchandraga">harishchandragad</string>
+    <string name="lbl_korigad">Korigad</string>
+    <string name="lbl_parbal_gad">parbal gad</string>
+    <string name="lbl_malhar_gad">Malhar-gad</string>
+    <string name="lbl_asherigad">Asherigad</string>
+    <string name="lbl_tung_fort">Tung-fort</string>
+    <string name="lbl_raj_machi">Raj machi</string>
+    <string name="lbl_yashwant_gad">Yashwant- gad</string>
+    <string name="lbl_singh_gad">Singh-gad</string>
+    <string name="lbl_dhopap">Dhopap</string>
+    <string name="lbl_devgad">Devgad</string>
+    <string name="lbl_rajgad">RajGad</string>
+    <string name="lbl_ghangad">Ghangad</string>
+    <!--    <string name="lbl_karnala">Karnala</string>-->
+    <string name="lbl_lohgad">Lohgad</string>
+    <string name="lbl_tikona">Tikona</string>
+    <!--    <string name="lbl_forts">Forts</string>-->
+    <string name="lbl_ratangad">Ratangad</string>
+
+
+    <!--adventure-->
+    <!--    <string name="lbl_adventure">Adventure</string>-->
+    <string name="lbl_rappelling">Rappelling</string>
+    <string name="lbl_riverrafting">RiverRafting</string>
+    <string name="lbl_scubadiving">ScubaDiving</string>
+    <string name="lbl_paragliding">Paragliding</string>
+    <string name="lbl_bunjee_jumping">Bunjee
+Jumping</string>
+    <string name="lbl_hot_balloon">Hot
+Balloon</string>
+
+    <!--caves-->
+
+
+    <string name="lbl_kharosa">Kharosa</string>
+    <string name="lbl_panhalekaji">Panhalekaji</string>
+    <string name="lbl_kanheri">Kanheri</string>
+    <string name="lbl_pitalkhora">pitalkhora</string>
+    <!--    <string name="lbl_bhaje">Bhaje</string>-->
+    <string name="lbl_bedse">Bedse</string>
+    <string name="lbl_karla">Karla</string>
+    <string name="lbl_ajanta">Ajanta</string>
+    <string name="lbl_elephata">Elephata</string>
+    <!--    <string name="lbl_caves">caves</string>-->
+    <string name="lbl_lenyadri">lenyadri</string>
+    <string name="lbl_pandavleni">Pandavleni</string>
+    <string name="lbl_ellore">Ellore</string>
+
+
+    <string name="lbl_vajresh_wari">vajresh-wari</string>
+    <!--    <string name="lbl_hot_water">Hot-Water</string>-->
+    <string name="lbl_unhere">unhere</string>
+    <string name="lbl_unkeshwar">unkeshwar</string>
+    <string name="lbl_unapdev">Unapdev</string>
+    <string name="lbl_unhavare">Unhavare</string>
+    <string name="lbl_unhale">Unhale</string>
+    <string name="lbl_tatwani">Tatwani</string>
+
+
+    <string name="lbl_velneshwar">velneshwar</string>
+    <string name="lbl_dahanu_bordi">Dahanu-Bordi</string>
+    <string name="lbl_kihim_beach">Kihim-beach</string>
+    <string name="lbl_murud_harnai">Murud-Harnai</string>
+    <string name="lbl_sasawanebeach">SasawaneBeach</string>
+    <string name="lbl_harihareshwar">Harihareshwar</string>
+    <string name="lbl_tarkarlibeach">TarkarliBeach</string>
+    <string name="lbl_alibag_beach">Alibag_Beach</string>
+    <string name="lbl_shrivardhan">Shrivardhan</string>
+    <string name="lbl_diveagar">Diveagar</string>
+    <string name="lbl_ganpati_pule">Ganpati-pule</string>
+    <!--    <string name="lbl_beach">Beach</string>-->
+    <string name="lbl_velas">Velas</string>
+
+    <!--    <string name="default_web_client_id">536867752545-kdq6io7keeqltgbfg3le1ptsivl1ci6g.apps.googleusercontent.com</string>-->
+</resources>

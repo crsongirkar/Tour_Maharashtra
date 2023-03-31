@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/rajmachi_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/rajmachi_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/rajmachi_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+Rajmachi Fort is one of the many historical forts in the rugged hills of Sahyadri mountains. The Maharashtra tour is incomplete without visiting the famous Rajmachi Fort which is well known tourist attraction of the state. Rajmachi which is also called Udhewadi is a small village found in the Sahyadri Mountain. The Rajmachi Fort lies at an altitude of 3000 feet above sea level. There are mainly two forts in Rajmachi one being the Shrivardhan Fort and the other is the Manaranjan Fort. Visible from Mumbai Pune Expressway on right hand side of Borghat.
+</p>
+
+<p>
+The Rajmachi Fort is an amazing place for the trekkers which make the tourism even more interesting. There are basically two routes which lead to the Rajmachi Fort. The difficult one is from the Kondiwade village where you need to climb about 2000 feet and the easier route is going from Lonavala which is just a plain walk.
+</p>
+
+<p>
+The true beauty of Rajmachi is seen during the monsoons when the place adorns a complete new look. The trekkers can set up their camps near the Kalbhairavnath Temple. There are several caves and monuments which can be explored in the fort. Rajmachi is the place will give you an offbeat experience in camping and trekking.
+</p>
+
+<p> 
+<strong><span style="color: rgb(26, 178, 255);">How to Reach:
+</span></strong>
+First reach the Lonavala railway station and from there private cabs are available to reach the fort.
+
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">Best Time to visit:
+</span></strong>
+The best time to plan holidays to the Rajmachi Fort is during the months of September to March when the climate is apt for sightseeing.
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/ajanta_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/ajanta_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/ajanta_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+Ajanta is located 107 kilometers from Aurangabad and 60 kilometers from Jalgaon. A cluster of 32 Buddhist caves located near Ajanta village, the site is a protected monument in the care of the Archaeological Survey of India. Moreover, since 1983, the Ajanta Caves have been declared a UNESCO World Heritage Site. The thirty rock-hewn caves at Ajanta, cut into the scarp of a cliff are either Chaityas or Viharas (monasteries).
+</p>
+
+<p>
+On the walls of the caves are paintings, many still glowing with their original colours. The outer walls are covered with brilliantly executed sculpture. The Buddhist theme of the Ajanta paintings recounts the life of Lord Buddha and tales of his previous earthly experiences. The group of some 32 caves was excavated between the 1st century BCE and the 7th century CE
+</p>
+
+<p>
+The Ajanta Caves were gradually forgotten until their 'rediscovery' by a British tiger-hunting party in 1819.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> -->
+
+<!doctype html>
+<html ng-app="likeApp">
+<head>
+<meta charset="utf-8">
+<title>Facebook like dislike button using Angularjs</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+<style>
+	body{text-align: center; margin: 50px auto; background: #4567AC;}
+	.box{background: #FFF; padding-top: 30px; padding-bottom: 30px;border-radius: 5px;}
+	.box h3{text-transform: uppercase; font-weight:bold ; margin-bottom: 30px;color:#4567AC;}
+	.btn{font-size: 18px;}
+	.box h4{ margin-top: 20px;}
+	.btn-primary,.btn-primary:hover,.btn-primary:focus { background-color: #4567AC;border-color: #0a4374;}
+
+</style>
+</head>
+
+<body ng-controller="mainCtrl">
+
+
+	<div class="container">
+		<div class="box col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 xol-xs-12">
+			<h3>Facebook Like</h3>
+			<button class="btn {{btnclass}}" ng-click="getlike()" ng-init="likes=0;"><i class="fa fa-thumbs-o-up"></i> Like</button>
+
+			<h4>Like : <span>{{likes}}</span></h4>
+		</div>
+	</div>
+	
+
+</body>
+<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js'></script>
+<script src='app.js'></script>
+</html>

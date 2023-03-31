@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+
+h4
+{
+	color:rgb(36, 16, 14);
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/paragliding_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/paragliding_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/paragliding_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h4>Spread Your Wings…and Fly ! </h4>
+<p>
+    Paragliding in Maharashtra a coveted attraction for the travellers. As every adventure enthusiast knows, paragliding is a type of flying sport that has gained huge popularity in recent years.
+</p>
+
+<p>
+    Paragliding is a sport in which the players fly in the air using paragliders. These paragliders are light in weight and are foot launched. There is a harness in the glider on which the paraglider sits. This harness is interconnected to the glider.
+</p>
+
+<p>
+As everyone wants to explore the fascination of flying in the sky, at least once in their lifetime. Maharashtra paragliding is a lifetime experience as it is an amazing sport and one of the best ways to enjoy the thrill of life. Maharashtra is the only state in central India, which has well-facilitated training centres for paragliding and sites, where this activity can be carried out. Kamshet and Panchgani are two of the best places in Maharashtra, where one can indulge in some of the best paragliding activities of India.
+</p>
+
+<p>
+Weather plays a huge role in paragliding and the glider should be absolutely sure of the weather conditions, before starting the flight. Winds blowing with average speeds of about 20km/hr are perfect for both smooth and dynamic flying. These two places offer the perfect and most reliable weather conditions for getting completely trained and flying high in the open sky.
+</p>
+
+<p><strong><span style="color: rgb(199,4,43);">
+Kamshet Paragliding :
+</span></strong></p>
+
+<p>
+Kamshet is a small town in Pune district, Originally known as Karmakshetra, it is also very near to the twin hill stations of Khandala and Lonavala. As Kamshet is blessed with both beautiful weather conditions and topography, it has become a popular destination for paragliding in the state. Due to the presence of Sahyadri ranges in this region, the glider can take the advantages of the low hills and proper landing space, which are the perfect conditions for him to take off.
+</p>
+
+<p>
+The period between October and June provide ideal weather conditions for paragliding. Kamshet is rightfully known as the home for paragliding, as it offers world-class paragliding facilities throughout the year.
+</p>
+
+<p><strong><span style="color: rgb(199,4,43);">
+Panchgani Paragliding :
+</span></strong></p>
+
+<p>
+Panchgani is located in the middle of five of the fascinating hills of the Sahyadri Ranges. If you are an adventure fanatic, then paragliding in Panchgani will definitely give you the desired adrenaline boost. Panchgani has gained a special place in the heart of paragliders. The reason extends from a pleasant climate, clear skies, and mesmerizing views of nature around. Paragliding in Panchgani is an exciting activity where you will be able to gain 360-degree views of the place and feel like a bird.
+</p>
+
+<p>
+November to February is the best time for paragliding in Panchgani. Bhilar, Khinger and Tapola are the three most popular paragliding destinations in Panchgani.In Panchgani, you can participate in two different types of flight: tandem and solo. In both the flights, you can reach up to a height of 4,000 to 5,000ft.
+</p>
+
+<p>
+Paragliding is one such experience, where one can feel as free as a bird and witness the beauty of nature underneath. The panoramic views of the lakes, green hills, dense forests and settlements reducing in size, are some of the rarest sights, worth viewing.
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

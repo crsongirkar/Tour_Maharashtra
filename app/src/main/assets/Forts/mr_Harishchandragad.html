@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/harishchandragad_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/harishchandragad_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/harishchandragad_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+महाराष्ट्रात ट्रेकिंगसाठी हरिश्चंद्रगड हे एक लोकप्रिय ठिकाण आहे आणि भंडारदरामधील प्रसिद्ध पर्यटनस्थळांपैकी एक आहे. हा किल्ला मूळतः सहाव्या शतकाचा आहे. इ.स. १४ व्या शतकात संत चांगदेव येथे ध्यान करायचे.  नंतर हा किल्ला मोगलांच्या ताब्यात गेला आणि मराठ्यांनी १७४७ मध्ये हा जिंकला.  मत्स्यपुराण, अग्निपुराण आणि स्कंदपुराण अशा विविध पुराणांमध्ये हरिश्चंद्रगडाविषयी बरेच संदर्भ आहेत.
+</p>
+
+<p>
+हरिश्चंद्रगडमधील रोहिदास, तारामती आणि हरिश्चंद्र हे तीन शिखर आहेत, या तिघांमध्ये तारामती सर्वाधिक उंच आहे.
+</p>
+
+
+<p> 
+<strong><span style="color: rgb(26, 178, 255);">कसे पोहोचाल:
+</span></strong>
+बसने सर्वोत्तम मार्ग आहेः मुंबई - कल्याण - खुबी फाटा- खीरेश्वर
+
+<br><br>
+
+<strong><span style="color: rgb(26, 178, 255);">भेट देण्याची उत्तम वेळः
+</span></strong>
+ट्रेक करण्याचा उत्तम काळ म्हणजे हिवाळ्यातील सप्टेंबर-मार्च महिन्यांचा.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

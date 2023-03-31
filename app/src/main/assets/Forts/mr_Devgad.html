@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/devgad_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/devgad_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/devgad_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+देवगड किल्ला हा महाराष्ट्र राज्यातील सिंधुदुर्ग जिल्ह्यातील देवगड तालुक्यात आहे. सुट्टी आणि साहसी भेट देण्यासाठी हे एक उत्तम ठिकाण आहे. देवगड किल्ला एक पर्यटन स्थळ आहे जे लोकांना एक आश्चर्यकारक दृश्य देते. हा किल्ला अरबी समुद्र आणि देवगड खाडीच्या संगमाजवळ आहे ज्यामुळे समुद्राचे शाश्वत दृश्य दिसते. गडावरुन पाहिल्या जाणाऱ्या जादुई आणि गूढ सूर्यास्तासाठी हे ठिकाण चांगलेच ओळखले जाते.
+</p>
+
+<p>
+निसर्गाने वेढलेल्या या किल्ल्याचे नाव देवगड त्या ठिकाणाहून आहे, जे अल्फोन्सो आंब्याच्या उत्पादनासाठी जगभरात प्रसिद्ध आहे. हा किल्ला इतर राज्यकर्त्यांच्या हल्ल्यामुळे उद्ध्वस्त करण्यात आला परंतु नंतर त्याचे पुर्ननिर्माण व मराठा प्रमुख कान्होजी आंग्रे यांनी जीवदान दिले. किल्ल्याचे सौंदर्य पर्यटकांना मंत्रमुग्ध करते आणि परिसराचे विहंगम दृश्य दुर्लक्ष करणे अशक्य आहे. तटबंदी आणि शोभिवंत भिंती बनविण्यामागील कारण हे त्या प्रदेशातील निसर्गरम्य सौंदर्य आहे.
+</p>
+
+<p>
+गडाच्या आत एक गणेश मंदिर आहे जे पर्यटकांचे आकर्षण आहे. येथे तीन तोफ आणि एक दीपगृह आहे जे किल्ल्याच्या लोकप्रियतेत भर घालत आहे.
+</p>
+
+
+<p> 
+<strong><span style="color: rgb(26, 178, 255);">कसे पोहोचाल:
+</span></strong>
+देवगड किल्ला रस्त्यांद्वारे सहज उपलब्ध होतो आणि लोकल बसेसही उपलब्ध असतात. आपण खासगी वाहनाने देखील जाऊ शकता. 
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

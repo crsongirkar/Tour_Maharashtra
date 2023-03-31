@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/rajgad_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/rajgad_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/rajgad_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+Rajgad is a hill fort situated in the Pune district of Maharashtra, India. Formerly known as Murudev and used to be the capital of the Maratha Empire for about 26 years under the reign of Chhatrapati Shivaji Maharaj. Rajgad boasts of the highest number of days stayed by Chatrapati Shivaji Maharaj on any fort. It was also one of the 17 forts that Chhatrapati Shivaji Maharaj kept when he signed the Treaty of Purandar in 1665.
+</p>
+
+<p>
+This fort was built using the treasure discovered from the nearby Torna Fort. Resting 1,376 meters above sea level, the ruins of this fort include water cisterns, caves, and palaces. This fort is also a popular monsoon trek destination, with visitors preferring to stay the night since the fort is too big to be explored in just a few hours.
+</p>
+
+<p>
+Trek to the Rajgad offers to witness the beauty of the Sahyadris as well as the fort. The fortification of the 3 machis: Padmavati machi, Suvela machi, and Sanjivani machi define the architectural creativity of that time. There are many temples, water cisterns, and ashrams that are very rich in architecture. It also offers a splendid view of other surrounding forts like Torna, Lingana, Raigad, Sinhagad, Purandar, Mangalgad, Vajragad, Rohida, Raireshwar, Mahabaleshwar mountain range, Makarandgad, Pratapgad, Varandha ghat, Kavlya fort, Mohangad, Gopya ghat, Madhe ghat, Raidand, Lohgad, Visapaur, Tung, and Tikona. 
+</p>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+ul li
+{
+   color:rgb(36, 16, 14);
+}
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/yashwantgad_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/yashwantgad_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/yashwantgad_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+यशवंतगड किल्ला महाराष्ट्र-गोवा सीमेवर छोट्या डोंगरावर रेडी येथे आहे, जैतापूर खाडीच्या उत्तरेस हा भव्य वृक्षांमधे वेढलेला किल्ला आहे आणि दक्षिण महाराष्ट्र किनाऱ्यावरील काही अतिशय सुंदर समुद्रकिनारे आहेत. यशवंतगड किल्ला म्हणजे मानवनिर्मित बनवलेल्या वस्तू निसर्गाने कशा ताब्यात घेतल्या याचे उत्तम उदाहरण.
+</p>
+
+<p>
+किल्ल्याच्या आतल्या भिंतींवर झाडाच्या मुळांनी हळूहळू प्रवेश केला ज्याचा परिणाम छप्पर नसलेले गड आहेत. वानर आणि ड्रोन्गो (कोतवाल) पक्षी मोठ्या संख्येने उपस्थित असतात.
+</p>
+
+<p>
+मुळात, यशवंतगड किल्ला मराठ्यांच्या मोठ्या राज्यकर्त्यांनी सोळाव्या शतकाच्या सुरूवातीच्या काळात बांधला होता. यशवंतगड किल्ला मराठ्यांच्या रणनीतिकदृष्ट्या आणि मोक्याचा एक महत्त्वाचा व्यापार बिंदू म्हणून काम करणार्‍या मराठ्यांना त्यावेळी मोठे स्थान होते.
+</p>
+
+<p> 
+स्वयंभू शिव मंदिर, गणेश मंदिर, माउली मंदिर, रामपुरुष मंदिर आणि नवदुर्गा मंदिर अशी प्रसिद्ध मंदिरे आहेत ज्यात दर्शनासाठी काही धार्मिक स्थळे आहेत. शिरोडा, अरावली आणि तेरेखोल किल्ला अशा काही ऐतिहासिक वास्तू आहेत ज्यांना आपण भेट देऊ शकता. यशवंतगड किल्ल्यापासून टेकड्यांच्या अंतरावर पॅराडाइझ बीच आहे.
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

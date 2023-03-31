@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+*{
+box-sizing: border-box;
+}
+body {
+      font-family: Verdana, sans-serif;
+      font-size: medium;
+      color:#7d7d68;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.mySlides {display: none;}
+img {
+vertical-align: middle;
+height:130px;
+max-width:500px;
+max-height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:500px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color:#bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color:#ff66a3;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p
+{
+   color:rgb(36, 16, 14);
+}
+
+h4
+{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Images/bunjee_one.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/bunjee_two.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/bunjee_three.jpg" style="width:100%">
+    </div>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>
+    Bungee jumping is an action-filled recreational activity and adventurous sport that involves head-first jumping from a tall structure with an elastic cord attached into participants' feet. That tall structure can be a building, crane, bridge or even a helicopter. The first modern bungee jump was in 1979 and since then the sport became widely popular. Bungee jumping is one of the most enjoyed extreme sports and available in almost every destination in the world.
+</p>
+
+<p>
+    Bungee jumping is relatively new in India, and there are only a handful of destinations that offer the activity. The Bungee Jumping facility in Maharashtra available on 2 places.
+</p>
+
+<p><strong><span style="color: rgb(199,4,43);"> 1. Kolad Bungee Jumping :
+</span></strong></p>
+
+<p>
+This Kolad bungee jump is enough to convince you that you have wings!
+</p>
+
+<p>
+Kolad Bungee by Flysports is the first water dipping bungee in India / Maharashtra. Jumping Platform is 40mtr from the water level of Kundalika river. trained crew follow all safety procedures at the time of jumping to make your jump safe & joyous.
+<br><br>
+The Kolad Village is situated 120 Kms from Mumbai and Pune. It is one of the most favored weekend getaways for Mumbaikars & Punekars. on the shores of the Kundalika river the unlimited options available in adventure sports. Along with other things, Kolad is a perfect spot for hiking, camping, and trekking. 
+</p>
+
+<p>
+<b>Bungee Jumping Details :</b><br>
+Height: 40 meters <br>
+Location: Kolad <br>
+</p>
+
+
+<p><strong><span style="color: rgb(199,4,43);"> 2. Della Adventures in Lonavala
+</span></strong></p>
+<p>
+A small hill station on the outskirts of Pune, a beautiful place and a perfect one for Bungee Jumping in Maharashtra which takes place in an adventure park called Della Adventures. The equipment is attached at a height of 150 ft and lasts for about 7-10 minutes. People above the age of 10, with a body weight of above 35 kgs are allowed to take the jump.
+</p>
+
+<p>
+The experts will explain all the safety measures before the jump and most importantly after the thrilling experience that leaves you dumbfounded you even receive a certificate saying you have successfully overcome your fears. 
+</p>
+
+<p>
+<b>Bungee Jumping Details :</b><br>
+Height: 45 meters <br>
+Best Time: Throughout the year <br>
+</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
